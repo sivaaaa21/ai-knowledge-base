@@ -64,3 +64,32 @@ Access API at: http://127.0.0.1:8000
 streamlit run frontend/app.py
 ```
 Access UI at: http://localhost:8501
+
+---
+
+## 🧠 Example Query
+> “Summarize key financial, HR, and sustainability insights from all documents.”
+
+---
+
+### 🧾 Sample Output
+```json
+{
+  "answer": "AlphaTech reported 10% growth and 14% margins...",
+  "confidence": 0.6,
+  "citations": [
+    {"filename": "financial_report.txt", "score": 1.39, "domain": "finance"},
+    {"filename": "hr_policy.txt", "score": 1.72, "domain": "hr"}
+  ],
+  "reasoning_summary": "Financial and HR data found; sustainability missing."
+}
+```
+
+---
+## 🧩 Design Decisions
+- Separated domain-based Chroma collections for better retrieval accuracy.
+- Used MiniLM embeddings for speed and semantic precision.
+- Implemented structured JSON responses for transparency and consistency.
+- Added DuckDuckGo fallback enrichment for missing context.
+
+
