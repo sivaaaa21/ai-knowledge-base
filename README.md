@@ -35,3 +35,32 @@ Each answer is supported by **citations**, **confidence scores**, and **domain-s
 ```bash
 git clone git@github.com:sivaaaa21/ai-knowledge-base.git
 cd ai-knowledge-base
+```
+
+### 2️⃣ Setup Virtual Environment
+```bash
+cd backend
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+### 3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 4️⃣ Add Environment Variables
+```bash
+OPENAI_API_KEY=your_openai_api_key
+```
+
+### 5️⃣ Run Backend
+```bash
+uvicorn backend.app:app --reload
+```
+Access API at: http://127.0.0.1:8000
+
+### 6️⃣ Run Frontend
+```bash
+streamlit run frontend/app.py
+```
+Access UI at: http://localhost:8501
