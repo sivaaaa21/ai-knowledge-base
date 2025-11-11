@@ -92,4 +92,15 @@ Access UI at: http://localhost:8501
 - Implemented structured JSON responses for transparency and consistency.
 - Added DuckDuckGo fallback enrichment for missing context.
 
+---
+
+## 🎥 Demo Video
+Watch the 5-minute demo walkthrough of the app in action here:
+
+👉 [Click to Watch on Loom](https://www.loom.com/share/your-loom-video-link)
+
+---
+
+## 📂 Repository
+GitHub: [sivaaaa21/ai-knowledge-base](https://github.com/sivaaaa21/ai-knowledge-base)
 
