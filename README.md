@@ -35,9 +35,3 @@ Each answer is supported by **citations**, **confidence scores**, and **domain-s
 ```bash
 git clone git@github.com:sivaaaa21/ai-knowledge-base.git
 cd ai-knowledge-base
-
-2️⃣ Setup Virtual Environment
-
-cd backend
-python -m venv .venv
-.venv\Scripts\activate
