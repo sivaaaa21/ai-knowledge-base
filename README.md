@@ -35,55 +35,9 @@ Each answer is supported by **citations**, **confidence scores**, and **domain-s
 ```bash
 git clone git@github.com:sivaaaa21/ai-knowledge-base.git
 cd ai-knowledge-base
+
 2️⃣ Setup Virtual Environment
-bash
-Copy code
+
 cd backend
 python -m venv .venv
 .venv\Scripts\activate
-3️⃣ Install Dependencies
-bash
-Copy code
-pip install -r requirements.txt
-4️⃣ Add Environment Variables
-Create a .env file inside /backend:
-
-ini
-Copy code
-OPENAI_API_KEY=your_openai_api_key
-5️⃣ Run Backend
-bash
-Copy code
-uvicorn backend.app:app --reload
-Access API at: http://127.0.0.1:8000
-
-6️⃣ Run Frontend
-bash
-Copy code
-streamlit run frontend/app.py
-Access UI at: http://localhost:8501
-
-🧠 Example Query
-“Summarize key financial, HR, and sustainability insights from all documents.”
-
-Sample Output:
-
-json
-Copy code
-{
-  "answer": "AlphaTech reported 10% growth and 14% margins...",
-  "confidence": 0.6,
-  "citations": [
-    {"filename": "financial_report.txt", "score": 1.39, "domain": "finance"},
-    {"filename": "hr_policy.txt", "score": 1.72, "domain": "hr"}
-  ],
-  "reasoning_summary": "Financial and HR data found; sustainability missing."
-}
-🧩 Design Decisions
-Separated domain-based Chroma collections for better retrieval accuracy.
-
-Used MiniLM embeddings for speed and semantic precision.
-
-Implemented structured JSON responses for transparency and consistency.
-
-Added DuckDuckGo fallback enrichment for missing context.
