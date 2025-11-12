@@ -5,7 +5,7 @@ from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
-from .schemas import RAGAnswer, Source
+from schemas import RAGAnswer, Source
 from dotenv import load_dotenv
 from duckduckgo_search import DDGS
 

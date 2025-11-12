@@ -4,9 +4,9 @@ from typing import List
 import os
 import json
 
-from .ingestion import ingest_files
-from .rag_pipeline import ask_question
-from .schemas import RAGAnswer
+from ingestion import ingest_files
+from rag_pipeline import ask_question
+from schemas import RAGAnswer
 
 app = FastAPI(
     title="AI Knowledge Base Search & Enrichment API",
